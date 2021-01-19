@@ -24,4 +24,4 @@ def handler(request):
     if(float(data['count'])/float(data['capacity']) >= 0.95 ):
         greeting = '🤬 The gym is full.'
     
-    return f'{greeting} There are {data["count"]} people climing right now.'
+    return f'{greeting} There are {data["count"]} people climbing right now.'
