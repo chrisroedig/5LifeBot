@@ -32,3 +32,4 @@ jobs:
           name: rockgym-occupancy
           runtime: python38
           credentials: ${{ secrets.gcp_credentials }}
+          source_dir: VAOccupancy
