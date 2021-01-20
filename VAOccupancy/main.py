@@ -31,7 +31,7 @@ def handler(request):
                 "text": {
                     "type": "plain_text",
                     "text": "{greeting}",
-                    "emoji": true
+                    "emoji": True
                 }
             },
             {
