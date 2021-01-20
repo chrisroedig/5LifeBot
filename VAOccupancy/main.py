@@ -25,12 +25,13 @@ def handler(request):
         greeting = '🤬 The gym is full.'
     
     return {
+        "response_type": "in_channel",
         "blocks": [
             {
                 "type": "header",
                 "text": {
                     "type": "plain_text",
-                    "text": "{greeting}",
+                    "text": f'{greeting}',
                     "emoji": True
                 }
             },
@@ -40,6 +41,16 @@ def handler(request):
                     "type": "mrkdwn",
                     "text": f'There are *{data["count"]}* people climbing right now.'
                 }
-            }
+            },
+            {
+			"type": "context",
+			"elements": [
+				{
+					"type": "plain_text",
+					"text": f'Pulled from VA's website. Max capacity is {data["count"]}',
+					"emoji": true
+				}
+			]
+		}
         ]
     }
