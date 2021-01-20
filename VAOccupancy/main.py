@@ -47,7 +47,7 @@ def handler(request):
 		"elements": [
 			{
 				"type": "plain_text",
-				"text": f'Pulled from VA website. Max capacity is {data["count"]}',
+				"text": f'Pulled from VA website. Max capacity is {data["capacity"]}',
 				"emoji": True
 			}
 		]
