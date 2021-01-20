@@ -43,14 +43,14 @@ def handler(request):
                 }
             },
             {
-			"type": "context",
-			"elements": [
-				{
-					"type": "plain_text",
-					"text": f'Pulled from VA's website. Max capacity is {data["count"]}',
-					"emoji": true
-				}
-			]
-		}
+		"type": "context",
+		"elements": [
+			{
+				"type": "plain_text",
+				"text": f'Pulled from VA website. Max capacity is {data["count"]}',
+				"emoji": True
+			}
+		]
+	    }
         ]
     }
